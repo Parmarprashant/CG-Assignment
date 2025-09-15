@@ -1,0 +1,59 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodingGita Feedback Form</title>
+</head>
+<body>
+
+  <h1>CodingGita Feedback Form</h1>
+  <p>We value your feedback. Please fill out this form to help us improve.</p>
+
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="course">Which course/workshop are you giving feedback for?</label><br>
+    <select id="course" name="course">
+      <option value="MERN Stack Course">MERN Stack Course</option>
+      <option value="DSA Bootcamp">DSA Bootcamp</option>
+      <option value="Web Development Workshop">Web Development Workshop</option>
+    </select><br><br>
+
+    <label>Rate your experience:</label><br>
+    <input type="radio" name="rating" value="1"> 1 Star<br>
+    <input type="radio" name="rating" value="2"> 2 Stars<br>
+    <input type="radio" name="rating" value="3"> 3 Stars<br>
+    <input type="radio" name="rating" value="4"> 4 Stars<br>
+    <input type="radio" name="rating" value="5"> 5 Stars<br><br>
+
+    <label>What aspects are you giving feedback on?</label><br>
+    <input type="checkbox" name="aspects" value="Content Quality"> Content Quality<br>
+    <input type="checkbox" name="aspects" value="Teaching Method"> Teaching Method<br>
+    <input type="checkbox" name="aspects" value="Support & Guidance"> Support & Guidance<br>
+    <input type="checkbox" name="aspects" value="Overall Experience"> Overall Experience<br><br>
+
+    <label for="suggestions">Additional Suggestions:</label><br>
+    <textarea id="suggestions" name="suggestions" rows="4" cols="40"></textarea><br><br>
+
+    <label for="satisfaction">How satisfied are you? (1–10 scale)</label><br>
+    <input type="number" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+    <label>Would you recommend us to a friend?</label><br>
+    <input type="radio" name="recommend" value="Yes"> Yes<br>
+    <input type="radio" name="recommend" value="No"> No<br><br>
+
+    <label for="date">Date of Feedback:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+
+</body>
+</html>
