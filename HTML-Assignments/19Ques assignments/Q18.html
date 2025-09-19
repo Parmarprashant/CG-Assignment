@@ -2,94 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Media Library Collection</title>
+  <title>My Media Library</title>
 </head>
 <body>
 
   <h1>Media Library Collection</h1>
   <p>This page contains my favorite images, songs, videos, and online embeds.</p>
 
-  <p>
-    <a href="#images">Images</a> |
-    <a href="#audio">Audio</a> |
-    <a href="#Video">Video</a> |
+  <nav>
+    <a href="#images">Images</a> | 
+    <a href="#audio">Audio</a> | 
+    <a href="#video">Video</a> | 
     <a href="#embeds">Embeds</a>
-  </p>
+  </nav>
+  <hr>
 
-  <!-- Images Section -->
-  <h2 id="images">Images</h2>
+  <section id="images">
+    <h2>Image Gallery</h2>
 
-  <figure>
-    <img src="Taj mahal.jpg" alt="Taj Mahal at sunrise">
-    <figcaption>Taj Mahal at sunrise.</figcaption>
-  </figure>
+    <figure>
+      <img src="Taj mahal.jpg" 
+           alt="Taj Mahal at sunrise" title="Taj Mahal" width="300">
+      <figcaption>Taj Mahal at sunrise</figcaption>
+    </figure>
 
-  <figure>
-    <img src="himalaya.jpg" alt="Beautiful mountains">
-    <figcaption>Beautiful mountains.</figcaption>
-  </figure>
+    <figure>
+      <img src="himalaya.jpg" title="Himalayas" width="300">
+      <figcaption>Beautiful mountains of the Himalayas</figcaption>
+    </figure>
 
-  <figure>
-    <img src="Beach.jpg" alt="Sunny beach">
-    <figcaption>Sunny beach.</figcaption>
-  </figure>
+    <figure>
+      <img src="Beach.jpg" 
+           alt="Sunny beach" title="Giza Pyramids" width="300">
+      <figcaption>Pyramids of Giza</figcaption>
+   
 
-  <figure>
-    <img src="forest.jpg" alt="Dense forest">
-    <figcaption>Dense forest.</figcaption>
-  </figure>
+    <figure>
+      <img src="forest.jpg" 
+           alt="Dense forest"  width="300">
+      <figcaption></figcaption>
+    </figure>
 
-  <figure>
-    <img src="cityscape.jpg" alt="City skyline at night">
-    <figcaption>City skyline at night.</figcaption>
-  </figure>
+    <figure>
+      <img src="cityscape.jpg" 
+           alt="City skyline at night."  width="300">
+      <figcaption>City skyline at night.</figcaption>
+    </figure>
+  </section>
 
-  <figure>
-    <img src="desert.jpg" alt="Golden desert dunes">
-    <figcaption>Golden desert dunes.</figcaption>
-  </figure>
+  <hr>
 
-  
-  <h2 id="audio">Audio</h2>
+  <section id="audio">
+    <h2>Audio Collection</h2>
 
-  <p>Song 1:</p>
-<audio autoplay controls>
-  <source src="https://res.cloudinary.com/dmfokz0r2/video/upload/v1757997277/Admirin_You_Official_Video_Karan_Aujla___Ikky___Making_Memories___Latest_Punjabi_Songs_2023_hnnisr.mp3" type="audio/mpeg">
- 
-</audio>
-<br>
+    <p>Song 1: (Autoplay)</p>
+    <audio controls autoplay>
+      <source src="song1.mp3"audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>This song starts automatically when the page loads.</p>
 
-<p>Song 2:</p>
-<audio loop controls>
-  <source src="song2.mp3" type="audio/mpeg">
- 
-</audio>
-<br>
+    <p>Song 2: (Loop)</p>
+    <audio controls loop>
+      <source src="song2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>This song repeats continuously.</p>
 
-<p>Song 3:</p>
-<audio controls>
-  <source src="song3.mp3" type="audio/mpeg">
-</audio> <BR><BR>
+    <p>Song 3: (Controls only)</p>
+    <audio controls>
+      <source src="song3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>This song can be played manually.</p>
+  </section>
 
-<h2 id="Video">Video</h2>
-<video src="bmw.mp4" controls>
+  <hr>
 
-  
-</video> <BR><BR>
+  <section id="video">
+    <h2>Video Collection</h2>
 
-  <h2 id="Video">Video</h2>
-  <video src="https://res.cloudinary.com/dmfokz0r2/video/upload/v1758000083/videoplayback_1_gcxjv0.mp4" controls>
-</video> 
-   <div>
+    <figure>
+      <video width="400" height="250" controls poster="bmw.jpg">
+        <source src="bmw.mp4" type="video/mp4">
+        
+      </video>
+      <figcaption>My First edit</figcaption>
+    </figure>
 
+    <figure>
+      <video width="400" height="250" controls poster="image.jpeg">
+        <source src="video2.mp4" type="video/mp4">
+        <track src="https://www.w3schools.com/html/mov_bbb_subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video element.
+      </video>
+      <figcaption>Explainer with subtitles</figcaption>
+    </figure>
+  </section>
 
+  <hr>
 
+  <section id="embeds">
+    <h2>External Media Embeds</h2>
 
-   </div>
+    <h3>YouTube Video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vaHYMtU4TiQ?si=4o-Frny9-7yCkyOX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  
+    <h3>Google Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74843193512!2d72.41493058425353!3d23.02047409985831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1757931641743!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    <h3>Wikipedia Article</h3>
+    <iframe src="https://en.wikipedia.org/wiki/Taj_Mahal" 
+            width="600" height="400">
+    </iframe>
+  </section>
 
-  
+  <hr>
+
+  <!-- Back to Top -->
+  <p><a href="#top">Back to Top</a></p>
+
 </body>
 </html>
